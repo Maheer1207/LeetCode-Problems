@@ -79,8 +79,11 @@ int main()
     push(&list1, 8);
     push(&list1, 4);
     push(&list1, 5);
+
+    int left, right;
+    cin >> left >> right >> endl;
     
-    ListNode* result = sol.reverseList(list1);
+    ListNode* result = sol.reverseBetween(list1);
     while (result->next != NULL) {
        cout << result->val << "->";
        result = result->next;
